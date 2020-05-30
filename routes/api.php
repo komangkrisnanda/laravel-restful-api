@@ -43,6 +43,12 @@ Route::resource('transactions', 'Transaction\TransactionController', [
     'only' => ['index', 'show']
 ]);
 
+Route::resource('transactions.categories', 'Transaction\TransactionCategoryController', [
+    'only' => ['index']
+]);
+
+
+
 // Users
 
 Route::resource('users', 'User\UserController', [
