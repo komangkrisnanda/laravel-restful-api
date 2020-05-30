@@ -27,6 +27,10 @@ Route::resource('buyers.products', 'Buyer\BuyerProductController', [
     'only' => ['index']
 ]);
 
+Route::resource('buyers.sellers', 'Buyer\BuyerSellerController', [
+    'only' => ['index']
+]);
+
 // Categories
 
 Route::resource('categories', 'Category\CategoryController', [
