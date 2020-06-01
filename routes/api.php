@@ -81,6 +81,10 @@ Route::resource('sellers.buyers', 'Seller\SellerBuyerController', [
     'only' => ['index', 'show']
 ]);
 
+Route::resource('sellers.products', 'Seller\SellerBuyerController', [
+    'except' => ['create', 'show', 'edit']
+]);
+
 // Transactions
 
 Route::resource('transactions', 'Transaction\TransactionController', [
