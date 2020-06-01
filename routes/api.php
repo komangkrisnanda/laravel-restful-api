@@ -67,6 +67,10 @@ Route::resource('products.transactions', 'Product\ProductTransactionController',
     'only' => ['index', 'show']
 ]);
 
+Route::resource('products.buyers', 'Product\ProductBuyerController', [
+    'only' => ['index', 'show']
+]);
+
 // Sellers
 
 Route::resource('sellers', 'Seller\SellerController', [
