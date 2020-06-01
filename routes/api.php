@@ -63,6 +63,10 @@ Route::resource('products', 'Product\ProductController', [
     'only' => ['index', 'show']
 ]);
 
+Route::resource('products.categories', 'Product\ProductCategoryController', [
+    'only' => ['index', 'show']
+]);
+
 Route::resource('products.transactions', 'Product\ProductTransactionController', [
     'only' => ['index', 'show']
 ]);
