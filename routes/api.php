@@ -81,7 +81,7 @@ Route::resource('sellers.buyers', 'Seller\SellerBuyerController', [
     'only' => ['index', 'show']
 ]);
 
-Route::resource('sellers.products', 'Seller\SellerBuyerController', [
+Route::resource('sellers.products', 'Seller\SellerProductController', [
     'except' => ['create', 'show', 'edit']
 ]);
 
