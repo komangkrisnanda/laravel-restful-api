@@ -53,6 +53,10 @@ Route::resource('categories.transactions', 'Category\CategoryTransactionControll
     'except' => ['create', 'edit']
 ]);
 
+Route::resource('categories.buyers', 'Category\CategoryBuyerController', [
+    'except' => ['create', 'edit']
+]);
+
 // Products
 
 Route::resource('products', 'Product\ProductController', [
